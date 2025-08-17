@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BMt/Sdlv6sM=",
+  "dgSpecHash": "s0EfWlUX9ro=",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\makrocompare1408\\MakroCompare1408.csproj",
   "expectedPackageFiles": [
@@ -36,9 +36,6 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.http\\9.0.0\\microsoft.extensions.http.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0\\microsoft.extensions.logging.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.configuration\\9.0.0\\microsoft.extensions.logging.configuration.9.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.console\\9.0.0\\microsoft.extensions.logging.console.9.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.debug\\9.0.0\\microsoft.extensions.logging.debug.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\9.0.0\\microsoft.extensions.options.configurationextensions.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",

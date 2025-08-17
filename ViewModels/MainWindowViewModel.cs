@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MakroCompare1408.Models;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -10,7 +9,6 @@ namespace MakroCompare1408.ViewModels;
 public partial class MainWindowViewModel : ViewModelBase
 {
     private readonly CodeComparisonService _comparisonService;
-    private readonly ILogger<MainWindowViewModel> _logger;
 
     [ObservableProperty]
     private string _code1 = string.Empty;
@@ -39,10 +37,9 @@ public partial class MainWindowViewModel : ViewModelBase
     [ObservableProperty]
     private double _overallSimilarity = 0;
 
-    public MainWindowViewModel(CodeComparisonService comparisonService, ILogger<MainWindowViewModel> logger)
+    public MainWindowViewModel(CodeComparisonService comparisonService)
     {
         _comparisonService = comparisonService;
-        _logger = logger;
     }
 
     [RelayCommand]
@@ -66,45 +63,13 @@ public partial class MainWindowViewModel : ViewModelBase
             OverallSimilarity = result.OverallSimilarity;
             DetailedAnalysis = result.DetailedAnalysis;
 
-            ResultText = $"Yazım (Syntax) Benzerliği: %{SyntaxSimilarity:F1}\n" +
+            ResultText = $"Yazım Benzerliği: %{SyntaxSimilarity:F1}\n" +
                         $"Mantıksal Benzerlik: %{LogicalSimilarity:F1}\n" +
                         $"Genel Benzerlik: %{OverallSimilarity:F1}";
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            _logger.LogError(ex, "Kod karşılaştırma sırasında hata oluştu");
-            ResultText = "Karşılaştırma sırasında bir hata oluştu. Lütfen tekrar deneyin.";
-        }
-        finally
-        {
-            IsProcessing = false;
-        }
-    }
-
-    [RelayCommand]
-    private async Task ExplainCodeAsync()
-    {
-        if (string.IsNullOrWhiteSpace(Code1) && string.IsNullOrWhiteSpace(Code2))
-        {
-            ResultText = "Lütfen en az bir kod alanını doldurun.";
-            return;
-        }
-
-        try
-        {
-            IsProcessing = true;
-            ResultText = "Kod analiz ediliyor...";
-
-            var codeToAnalyze = !string.IsNullOrWhiteSpace(Code1) ? Code1 : Code2;
-            var result = await _comparisonService.CompareCodesAsync(codeToAnalyze, codeToAnalyze);
-
-            DetailedAnalysis = result.DetailedAnalysis;
-            ResultText = "Kod analizi tamamlandı. Detaylı açıklama aşağıda görüntüleniyor.";
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Kod analizi sırasında hata oluştu");
-            ResultText = "Analiz sırasında bir hata oluştu. Lütfen tekrar deneyin.";
+            ResultText = "Karşılaştırma sırasında bir hata oluştu.";
         }
         finally
         {

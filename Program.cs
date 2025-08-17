@@ -5,7 +5,6 @@ using MakroCompare1408.Models;
 using MakroCompare1408.ViewModels;
 using MakroCompare1408.Views;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using System;
 
 namespace MakroCompare1408;
@@ -64,12 +63,5 @@ public partial class App : Application
 
         // Views'leri kaydet
         services.AddTransient<MainWindow>();
-
-        // Logging'i yapılandır
-        services.AddLogging(builder =>
-        {
-            builder.AddConsole();
-            builder.AddDebug();
-        });
     }
 }

@@ -8,8 +8,6 @@ public class CodeComparisonResult
     public double LogicalSimilarity { get; set; }
     public double OverallSimilarity { get; set; }
     public string DetailedAnalysis { get; set; } = string.Empty;
-    public List<string> CommonElements { get; set; } = new();
-    public List<string> Differences { get; set; } = new();
 }
 
 public class OllamaRequest

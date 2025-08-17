@@ -50,9 +50,6 @@ C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Dia
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Logging.Configuration.dll
-C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Logging.Console.dll
-C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Logging.Debug.dll
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
@@ -88,3 +85,4 @@ C:\Users\user\Desktop\makrocompare1408\bin\Debug\net9.0\runtimes\win-x86\native\
 C:\Users\user\Desktop\makrocompare1408\obj\Debug\net9.0\MakroCom.CEA9F44C.Up2Date
 C:\Users\user\Desktop\makrocompare1408\obj\Debug\net9.0\MakroCompare1408.genruntimeconfig.cache
 C:\Users\user\Desktop\makrocompare1408\obj\Debug\net9.0\ref\MakroCompare1408.dll
+C:\Users\user\Desktop\makrocompare1408\obj\Debug\net9.0\MakroCompare1408.sourcelink.json
